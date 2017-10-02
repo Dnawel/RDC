@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="slider.css">
+        <title>Title of the document</title>
+        <script src="https://use.fontawesome.com/8a9f65922a.js">
+        </script>
+        <link rel ="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <section class="menu-section menu">
+                <nav class="single-nav">
+                    <ul>
+                        <li><a href="#" class ="mon-cheri">LES RAYONS DES CREATEURS</a></li>
+                        <li><a href="#">NOUS TROUVER</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="catalogue.html">CATALOGUE</a></li>
+                    </ul>
+                </nav>
+                <nav class="social-menu menu" role="navigation">
+                    <ul>
+                        <li><a href="http://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="http://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="http://linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="http://instagram.com"><i class="fa fa-instagram colorinsta" aria-hidden="true"></i></a></li>
+                    </ul>
+                </nav>
+            </section>
+             </header>
+        <br><br>
+        <div class="card-con3">
+                </div>
+        <section class="cards">
+            <article class="card">
+    <div class="w3-content w3-display-container">
+  <img class="mySlides" src="2h%20(1).jpg" style="width:100%">
+<img class="mySlides" src="2h%20(2).jpg" style="width:100%">
+<img class="mySlides" src="2h%20(3).jpg" style="width:100%">
+<img class="mySlides" src="2h%20(4).jpg" style="width:100%">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+            </article></section>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+    </body>
+
+</html>

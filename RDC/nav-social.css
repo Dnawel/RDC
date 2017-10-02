@@ -1,0 +1,32 @@
+.social-menu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu ul{
+    width: 100%;
+    
+    display: flex;
+    color: white;
+    list-style-type: none;
+    line-height: center;
+}
+
+.menu ul li{
+    display: block;
+    color: white;
+    padding: 5px;
+   }
+.menu ul li a{
+    display: block;
+    color: white;
+    padding-left: 15px;
+    text-decoration: none;
+   }
+
+header{
+    position:fixed;
+    background-color: #f6e8e5;
+    width: 100%;
+    z-index: 9999;   
+}
